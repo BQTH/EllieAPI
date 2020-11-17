@@ -22,7 +22,7 @@ app.use('/posts', postsRoute);
 
 //ROUTES
 app.get('/', (req, res) => { 
-    res.send('We are on home');
+    res.send('Send get/post/delete/patch requests to https://interactiveellieapi.herokuapp.com/posts');
 });
 
 //connect to database
