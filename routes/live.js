@@ -49,7 +49,7 @@ router.get('/:liveId', async (req, res) => {
 //Update
 router.patch('/:liveId', async (req, res) => {
     try {
-        const updatedLive = await Live.updateOne({ _id: req.params.liveId }, { $set: { title: req.body.title, ppm: req.body.ppm } });
+        const updatedLive = await Live.updateOne({ _id: req.params.liveId }, { $set: { ppm: req.body.ppm } });
         res.json(updatedLive);
     }
     catch (err) {
@@ -60,7 +60,7 @@ router.patch('/:liveId', async (req, res) => {
 
 router.put('/:liveId', async (req, res) => {
     try {
-        const updatedLive = await Live.updateOne({ _id: req.params.liveId }, { $set: { title: req.body.title, ppm: req.body.ppm } });
+        const updatedLive = await Live.updateOne({ _id: req.params.liveId }, { $set: { ppm: req.body.ppm } });
         res.json(updatedLive);
     }
     catch (err) {
