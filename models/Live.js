@@ -9,7 +9,7 @@ const LiveSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    description: {
+    ppm: {
         type: Number,
         required: true,
         validate: {

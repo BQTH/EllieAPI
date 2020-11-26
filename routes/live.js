@@ -19,13 +19,13 @@ router.post('/', async (req, res) => {
     const live = new Live({
         _id: req.body._id,
         title: req.body.title,
-        description: req.body.description
+        ppm: req.body.ppm
     });
     
     /*Check
     console.log("ready to save");
     console.log(
-        live.description
+        live.ppm
     );*/
     
     try{
@@ -49,7 +49,7 @@ router.get('/:liveId', async (req, res) => {
 //Update
 router.patch('/:liveId', async (req,res) => {
     try {
-        const updatedLive = await Live.updateOne({_id: req.params.liveId}, {$set: {title: req.body.title, description: req.body.description}});
+        const updatedLive = await Live.updateOne({_id: req.params.liveId}, {$set: {title: req.body.title, ppm: req.body.ppm}});
         res.json(updatedLive);
     }
     catch(err) {
