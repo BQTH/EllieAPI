@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-/* cors for cross domain data requests.
-const cors = require('cors')*/
+// cors for cross domain data requests.
+const cors = require('cors');
 //Import routes
 var co2Route = require('./routes/co2');
 var liveRoute = require('./routes/live');
