@@ -11,3 +11,7 @@ To get all saved sensor data send get request to domain/sensorname f.e. (https:/
 To delete a post send delete request to domain/sensorname/postid f.e. (https://interactiveellieapi.herokuapp.com/co2/postid)
 To update a post send put or patch request to domain/sensorname/postid f.e.  (https://interactiveellieapi.herokuapp.com/co2/postid)
 
+# Add sensor for long term saving
+Create a new route and model with a clear, sensor related name. Copy another model and change or add whatever is necesarry. Then copy a route and change or add whatever is necesarry.
+
+Test thoroughly on local machine before pushing to the production (heroku connected) git!!
