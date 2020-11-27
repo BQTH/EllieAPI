@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 
 //Middlewares
-//app.use(cors());
+app.use(cors());
 app.use('/co2', co2Route);
 
 app.use('/live', liveRoute);
