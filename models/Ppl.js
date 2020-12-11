@@ -1,15 +1,11 @@
 const mongoose = require('mongoose');
 
-const LiveSchema = mongoose.Schema({
-    _id: {
-        type: String,
-        required:true
-    },
+const PplSchema = mongoose.Schema({
     title: {
         type: String,
         required: true
     },
-    value: {
+    ppl_count: {
         type: Number,
         required: true,
         validate: {
@@ -23,4 +19,4 @@ const LiveSchema = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Live', LiveSchema);
+module.exports = mongoose.model('Ppl', PplSchema);

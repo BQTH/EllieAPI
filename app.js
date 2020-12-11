@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 //Import routes
 var co2Route = require('./routes/co2');
+var pplRoute = require('./routes/ppl');
 var liveRoute = require('./routes/live');
 //Import env
 require('dotenv/config');
@@ -19,7 +20,7 @@ app.use(bodyParser.json());
 //Middlewares
 app.use(cors());
 app.use('/co2', co2Route);
-
+app.use('/ppl', pplRoute);
 app.use('/live', liveRoute);
 
 

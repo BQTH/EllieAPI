@@ -16,3 +16,25 @@ Create a new route and model with a clear, sensor related name. Copy another mod
 
 Test thoroughly on local machine before pushing to the production (heroku connected) git!!
 
+
+# MODELS
+# Saved Co2 data
+{
+    "title": "(descriptiom)"
+    "ppm": ""
+}
+
+# Saved ppl 
+{
+    "title": "(description)"
+    "ppl_count": ""
+}
+
+# LIVE MODEL
+# Live data
+{
+    "_id": "Sensorname"
+    "title": "(description)"
+    "value": "(f.e ppm, ppl_count)"
+}
+
