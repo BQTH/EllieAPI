@@ -24,7 +24,7 @@ Test thoroughly on local machine before pushing to the production (heroku connec
     "ppm": ""
 }
 
-# Saved ppl (_id = ppl_count)
+# Saved ppl_count (_id = ppl_count)
 {
     "title": "(description)"
     "ppl_count": ""
