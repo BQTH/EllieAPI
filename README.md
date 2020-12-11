@@ -18,13 +18,13 @@ Test thoroughly on local machine before pushing to the production (heroku connec
 
 
 # MODELS
-# Saved Co2 data
+# Saved Co2 data (_id = co2)
 {
-    "title": "(descriptiom)"
+    "title": "(description)"
     "ppm": ""
 }
 
-# Saved ppl 
+# Saved ppl (_id = ppl_count)
 {
     "title": "(description)"
     "ppl_count": ""

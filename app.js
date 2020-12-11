@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 //Middlewares
 app.use(cors());
 app.use('/co2', co2Route);
-app.use('/ppl', pplRoute);
+app.use('/ppl_count', pplRoute);
 app.use('/live', liveRoute);
 
 
